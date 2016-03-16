@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 ShopGo. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="ShopGo_QuickLinks::quicklinks" title="Quick Links" module="ShopGo_QuickLinks" sortOrder="32" dependsOnModule="ShopGo_QuickLinks" resource="ShopGo_QuickLinks::quicklinks"/>
+        <add id="ShopGo_QuickLinks::sales" title="Sales Orders" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::sales"/>
+        <add id="ShopGo_QuickLinks::sales_new_order" title="New Order" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::sales" action="sales/order_create/index" resource="ShopGo_QuickLinks::sales_new_order"/>
+        <add id="ShopGo_QuickLinks::sales_view_orders" title="View Orders" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::sales" action="sales/order/index" resource="ShopGo_QuickLinks::sales_view_orders"/>
+        <add id="ShopGo_QuickLinks::products" title="Products" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::products"/>
+        <add id="ShopGo_QuickLinks::products_add_product" title="Add Product" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::products" action="catalog/product/new/set/4" resource="ShopGo_QuickLinks::products_add_product"/>
+        <add id="ShopGo_QuickLinks::products_view_products" title="View Products" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::products" action="catalog/product/index" resource="ShopGo_QuickLinks::products_view_products"/>
+        <add id="ShopGo_QuickLinks::content" title="Content" module="ShopGo_QuickLinks" sortOrder="20" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::content"/>
+        <add id="ShopGo_QuickLinks::content_pages" title="Manage Pages" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::content" action="cms/page/index" resource="ShopGo_QuickLinks::content_pages"/>
+        <add id="ShopGo_QuickLinks::content_blocks" title="Manage Blocks" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::content" action="cms/block/index" resource="ShopGo_QuickLinks::content_blocks"/>
+        <add id="ShopGo_QuickLinks::marketing" title="Marketing" module="ShopGo_QuickLinks" sortOrder="30" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::marketing"/>
+        <add id="ShopGo_QuickLinks::marketing_catalog_price_rule" title="Catalog Price Rule" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::marketing" action="catalog_rule/promo_catalog/index" resource="ShopGo_QuickLinks::marketing_catalog_price_rule"/>
+        <add id="ShopGo_QuickLinks::marketing_cart_price_rules" title="Cart Price Rules" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::marketing" action="sales_rule/promo_quote/index" resource="ShopGo_QuickLinks::marketing_cart_price_rules"/>
+        <add id="ShopGo_QuickLinks::shipping_payment" title="Shipping and Payment" module="ShopGo_QuickLinks" sortOrder="40" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::shipping_payment"/>
+        <add id="ShopGo_QuickLinks::shipping_payment_shipping_methods" title="Shipping Methods" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::shipping_payment" action="system_config/edit/section/carriers" resource="ShopGo_QuickLinks::shipping_payment_shipping_methods"/>
+        <add id="ShopGo_QuickLinks::shipping_payment_payment_methods" title="Payment Methods" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::shipping_payment" action="system_config/edit/section/payment" resource="ShopGo_QuickLinks::shipping_payment_payment_methods"/>
+        <add id="ShopGo_QuickLinks::branding_and_themes" title="Branding and Themes" module="ShopGo_QuickLinks" sortOrder="50" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::branding_and_themes"/>
+        <add id="ShopGo_QuickLinks::branding_and_themes_change_logo" title="Change Logo" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::branding_and_themes" action="adminhtml/system_config/edit/section/design" resource="ShopGo_QuickLinks::branding_and_themes_change_logo"/>
+        <add id="ShopGo_QuickLinks::branding_and_themes_change_theme" title="Change Theme" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::branding_and_themes" action="adminhtml/system_config/edit/section/design" resource="ShopGo_QuickLinks::branding_and_themes_change_theme"/>
+        <add id="ShopGo_QuickLinks::branding_and_themes_customize_theme" title="Customize Theme" module="ShopGo_QuickLinks" sortOrder="20" parent="ShopGo_QuickLinks::branding_and_themes" action="adminhtml/system_design_theme" resource="ShopGo_QuickLinks::branding_and_themes_customize_theme"/>
+        <add id="ShopGo_QuickLinks::help" title="Help" module="ShopGo_QuickLinks" sortOrder="60" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::help"/>
+        <add id="ShopGo_QuickLinks::help_support_page" title="Articles and Manuals" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::help" action="quicklinks/redirect/supportpage" resource="ShopGo_QuickLinks::help_support_page"/>
+        <add id="ShopGo_QuickLinks::help_support_email" title="ShopGo Support Email" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::help" action="quicklinks/redirect/supportemail" resource="ShopGo_QuickLinks::help_support_email"/>
+    </menu>
+</config>
