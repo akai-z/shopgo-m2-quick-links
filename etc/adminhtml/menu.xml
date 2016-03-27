@@ -9,7 +9,7 @@
     <menu>
         <add id="ShopGo_QuickLinks::quicklinks" title="Quick Links" module="ShopGo_QuickLinks" sortOrder="32" dependsOnModule="ShopGo_QuickLinks" resource="ShopGo_QuickLinks::quicklinks"/>
         <add id="ShopGo_QuickLinks::sales" title="Sales Orders" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::sales"/>
-        <add id="ShopGo_QuickLinks::sales_new_order" title="New Order" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::sales" action="sales/order_create/index" resource="ShopGo_QuickLinks::sales_new_order"/>
+        <add id="ShopGo_QuickLinks::sales_new_order" title="Create New Order" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::sales" action="sales/order_create/index" resource="ShopGo_QuickLinks::sales_new_order"/>
         <add id="ShopGo_QuickLinks::sales_view_orders" title="View Orders" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::sales" action="sales/order/index" resource="ShopGo_QuickLinks::sales_view_orders"/>
         <add id="ShopGo_QuickLinks::products" title="Products" module="ShopGo_QuickLinks" sortOrder="10" parent="ShopGo_QuickLinks::quicklinks" resource="ShopGo_QuickLinks::products"/>
         <add id="ShopGo_QuickLinks::products_add_product" title="Add Product" module="ShopGo_QuickLinks" sortOrder="0" parent="ShopGo_QuickLinks::products" action="catalog/product/new/set/4" resource="ShopGo_QuickLinks::products_add_product"/>
