@@ -4,11 +4,11 @@ Quick Links
 
 <h2 id="syn">Synopsis</h2>
 
-TODO
+A module that adds shortcuts to some admin panel pages.
 
 <h2 id="over">Overview</h2>
 
-TODO
+Quick Links module adds links to Magento 2 admin panel menu, in order to make it easier for users to access essential pages.
 
 <h2 id="install">Installation</h2>
 
